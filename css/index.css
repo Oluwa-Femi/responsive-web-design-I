@@ -88,7 +88,12 @@ nav{
 	display:flex;
     flex-direction: row;
     justify-content: space-evenly;
-    order: 2;
+}
+@media (max-width:800px){
+    .nav-menu{
+        display:flex;
+        order: 2;
+    }
 }
 a{
 	margin: 30px;
@@ -105,13 +110,22 @@ a{
         order: 1;
         justify-content: center;
     }
+}
 .header-image {
 	width: 100%;
 }
 @media (max-width:800px){
-    .header-image{
-     
+    .mantra-left {
+        padding-left: 35%;
     }
+}
+
+@media (max-width:800px){
+    .mantra-right {
+        display: none;
+        margin: 0 auto;
+    }
+}
 .header-content{
 	width:100%;
 	padding: 15px 0px 15px 0px;
@@ -119,7 +133,6 @@ a{
 h2{
 	font-size: 2em;
 }
-
 content{
 	display: flex;
 	flex-direction: column;
