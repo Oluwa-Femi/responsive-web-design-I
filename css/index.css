@@ -159,6 +159,11 @@ a{
 h2{
 	font-size: 2em;
 }
+@media (max-width:500px) {
+    h2{
+        font-size: 1em;
+    }
+}
 content{
 	display: flex;
 	flex-direction: column;
@@ -227,8 +232,6 @@ content{
 button {
 	padding: 5px;
 }
-.mantra-right{
-}
 hr {
 	border: 0;
 	clear:both;
@@ -243,11 +246,18 @@ hr {
 	  display: flex;
 	  flex-direction: column;
   }
+
   .main-content1 {
 	  padding: 20px 0px 20px 0px ;
 	  display: flex;
 	  flex-direction: row;
   }
+  @media (max-width:500px) {
+    .main-content1{
+        display: flex;
+        flex-direction: column;
+    }
+}
   .main-content1 .features{
 	  padding: 0px 20px 0px 0px;
   } 
@@ -255,6 +265,12 @@ hr {
 	padding: 20px 0px 20px 0px;
 	display: flex;
 	flex-direction: row;
+}
+@media (max-width:500px) {
+    .main-content2{
+        display: flex;
+        flex-direction: column;
+    }
 }
 address{
 	padding: 20px 20px 20px 20px;
@@ -276,9 +292,6 @@ address{
 	display: flex;
 	justify-content: center;
 	
-}
-footer{
-
 }
 .footer-content{
 	display: flex;
